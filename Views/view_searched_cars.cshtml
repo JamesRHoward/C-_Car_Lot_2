@@ -1,4 +1,4 @@
-<h1>All cars in inventory.</h1>
+<h1>Cars fitting your requirements.</h1>
     <ul>
         @foreach(var thing in Model)
             {
@@ -10,6 +10,3 @@
     <h2><a href="/add-new-car">click here to add more cars</a></h2>
     <h2><a href="/search-cars">click here to search your car list</a></h2>
     <h2><a href="/">Go back to home</a></h2>
-<form action="/cars-cleared" method="post">
-    <button type="submit" name="button">clear all cars</button>
-</form>
