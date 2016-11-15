@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CarDealership.Objects
 {
-    class Car
+    public class Car
     {
         private string _makeModel;
         private int _price;
@@ -59,9 +59,14 @@ namespace CarDealership.Objects
             _instances.Add(this);
         }
 
-        public List<Car> GetAll()
+        public static List<Car> GetAll()
         {
             return _instances;
+        }
+
+        public static void ClearAll()
+        {
+            _instances.Clear();
         }
     }
 

@@ -1,15 +1,16 @@
 <h1>Add a car to your list</h1>
-<form action="car-added" method="post">
+<form action="/car-added" method="post">
     <div class="form-group">
         <label for="car-make">Input the make and model of the car:</label>
         <input type="text" id="car-make" name="car-make" required="required" placeholder="Ford GT40">
     </div>
     <div class="form-group">
         <label for="car-price">Input the price of the car in USD($):</label>
-        <input type="text" id="car-price" name="car-price" required="required" placeholder="400000">
+        <input type="number" id="car-price" name="car-price" required="required" placeholder="400000">
     </div>
     <div class="form-group">
         <label for="car-mileage">Input the mileage of the car in miles:</label>
-        <input type="text" id="car-mileage" name="car-mileage" required="required" placeholder="600">
+        <input type="number" id="car-mileage" name="car-mileage" required="required" placeholder="600">
     </div>
+    <button type="submit" name="button">Submit car</button>
 </form>
